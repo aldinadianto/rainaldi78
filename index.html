@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style type="text/css">
+          .container {
+              width: 800px;
+              margin: 0 auto;
+          }
+          .header {
+              background-color: #eee;
+              min-height: 50px;
+              text-align: center;
+          }
+          .content {
+              background-color: #ddd;
+              min-height: 500px;
+              overflow: auto
+          }
+          .footer {
+            background-color: #ddd;
+              min-height: 50px;
+              padding: 20px;
+              text-align: center;
+          }
+          .logo img {
+              width: 200px;
+          }
+          .menu ul {
+              padding: 0;
+          }
+          .menu ul li {
+              display: inline-block;
+              position: relative; 
+          } 
+          .menu ul li a {
+              padding: 10px 20px;
+              text-decoration: none;
+          }
+          .thumbnail {
+              background-color: white;
+              text-align: center;
+              padding: 10px;
+              width: 225px;
+              margin: 10px;
+              float: left;
+        }
+        .thumbnail img {
+              width: 100%;
+        }
+        ul.submenu {
+              background-color: #eee;
+              border: 1px solid #ccc;
+              text-align: left;
+              display: none; 
+        }
+        .menu ul li:hover ul.submenu  {
+              display: block; 
+        } 
+        ul.submenu li {
+             display: block; 
+            }
+        ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+            position: absolute;
+            top: 20px; 
+            left: 0;
+        } 
+        .jumbotron {
+            font-family: 'Raleway', sans-serif; 
+             width: 100%;
+            padding: 80px 40px; 
+            box-sizing: border-box;
+            text-align: center; 
+            color: white; 
+            background-color: #aaa; 
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS43AWwRPN4RC8jlrWaJ-YvFxCm9ooJhmce75x42ARw2Q&s=10); 
+            background-size: cover; 
+            position: relative; 
+        } 
+        .overlay {
+            position: absolute; 
+            top: 0; left: 0;
+            width: 100%;
+            height:100%; 
+            background-color: black; 
+            opacity: 0.4; 
+        }
+        .jumbotron h2, .jumbotron p { 
+            position: relative; 
+        }  
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <div class="logo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQbEFc5H-nG0eZo2jQX1ZcSg5ZHXqKvA9G2Shwyg3VA&s=10">
+</div>
+<div class="menu">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a>
+<ul class="submenu">
+<li><a href="#">CV</a></li>
+<li><a href="#">Education</a></li>
+<li><a href="#">Portfolio</a></li>
+</ul>
+</li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+      <div class="content">
+        <div class="jumbotron"> 
+            <div class="overlay"></div> 
+            <h2>Welcome to My Homepage</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor necessitatibus quae voluptate explicabo architecto fugiat asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente modi, ut harum aliquam accusamus unde.</p> 
+        </div> 
+          <h2>My Products</h2>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSKPnExkmi-G7nBuAgHFXue4V9AOD03LZCULEOmuEAog&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOuEkpHMYgRP1rfPHfa27TICRzwDJwVRLbLowFDDpKiQ&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX0mYfFKoqQ5oUq0XK0ilIWSY4cc79aC3wU5_zgYCXw&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7biojmwo5tXATNPgDX47RdrAf1F62QqdgYMy64D__jg&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OzDyGJbHxUnG-R15c5jFo5I7RG2IstG2V-hUVdfAMA&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+<div class="thumbnail">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfde_T2d3WLVEKnnHkOJxc_vj6aslvg-DbXLLLeyfXpA&s=10/250x150">
+<h2>Product 2</h2>
+<p>Rp 250.000</p>
+</div>
+</div>
+      <div class="footer">
+           <p>copyright 2018 My Page</p>
+     </div>
+  </div>
+</body>
